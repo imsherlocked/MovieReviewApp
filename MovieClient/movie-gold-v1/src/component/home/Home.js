@@ -1,7 +1,8 @@
+import Hero from "../hero/Hero";
 import React from "react";
 
 const Home = ({ movies }) => {
-  return <div>Welcome!!!</div>;
+  return <Hero movies={movies}></Hero>;
 };
 
 export default Home;
