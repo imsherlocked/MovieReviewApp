@@ -13,6 +13,9 @@ const ReviewForm = ({ handleSubmit, revText, labelText, defaultValue }) => {
           defaultValue={defaultValue}
         ></Form.Control>
       </Form.Group>
+      <Button variable="outline-info" onClick={handleSubmit}>
+        Submit
+      </Button>
     </Form>
   );
 };
