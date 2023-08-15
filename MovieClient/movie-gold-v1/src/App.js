@@ -20,15 +20,17 @@ function App() {
   };
 
   const getMovieData = async (movieId) => {
-    const response = await api.get(`/api/v1/movies/${movieId}`);
+    try {
+      const response = await api.get(`/api/v1/movies/${movieId}`);
 
-    const singleMovie = response.data;
+      const singleMovie = response.data;
 
-    setMovie(singleMovie);
+      setMovie(singleMovie);
 
-    setReviews(singleMovie.reviews);
-
-    console.error(error);
+      setReviews(singleMovie.reviews);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   useEffect(() => {
