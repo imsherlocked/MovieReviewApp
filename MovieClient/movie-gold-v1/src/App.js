@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./component/home/Home";
 import Header from "./component/header/Header";
 import Trailer from "./component/trailer/Trailer";
+import Reviews from "./component/reviews/Reviews";
 
 function App() {
   const [movies, setMovies] = useState();
